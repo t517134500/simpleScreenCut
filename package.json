@@ -1,7 +1,25 @@
 {
-  "name": "simpleScreenCut",
+  "name": "simple-screen-cut",
   "version": "0.0.1",
-  "dependencies": {
-    
-  }
+  "dependencies": {},
+  "description": "用于快速生成复杂效果的3d贴图 # 代码整理中...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t517134500/simpleScreenCut.git"
+  },
+  "keywords": [
+    "THREE",
+    "screenCut",
+    "dom to image"
+  ],
+  "author": "t517134500",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t517134500/simpleScreenCut/issues"
+  },
+  "homepage": "https://github.com/t517134500/simpleScreenCut#readme"
 }

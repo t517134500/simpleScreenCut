@@ -1,1 +1,1 @@
- import empty from './public/simpleScreenCut.js';
+ import './public/SimpleScreenCut.js';

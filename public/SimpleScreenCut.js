@@ -1,5 +1,7 @@
-class SimpleScreenCut {
+import OriginalClass from './OriginalClass.js';
+class SimpleScreenCut extends OriginalClass {
     constructor() {
+        super();
         // 注册canvas
         this.canvas = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas');
         this.context = this.canvas.getContext('2d');

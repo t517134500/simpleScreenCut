@@ -1,18 +1,11 @@
-import OriginalClass from './OriginalClass.js';
-class SimpleScreenCut extends OriginalClass {
-    constructor() {
-        super();
-        // 注册canvas
-        this.canvas = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas');
-        this.context = this.canvas.getContext('2d');
-        // 注册图片
-        this.image = new Image();
-        this.onLoad = () => {};
+export class SimpleScreenCut {
+    constructor(options) {
         // 注册回调
         this.beforeScreenCut = () => {};
         this.screenCut = () => {};
         this.beforeDestroy = () => {};
         this.destroyed = () => {};
+        Object.assign(this, options);
     }
 
     // 传入div
@@ -32,35 +25,16 @@ class SimpleScreenCut extends OriginalClass {
         destroyed.call(this, dom, this);
     }
 
-    // 绘制图片
-    drawImg(img) {
-        const { width } = img;
-        const { height } = img;
-        // canvas绘制
-        this.canvas.width = width;
-        this.canvas.height = height;
-        // 画布清除
-        this.context.clearRect(0, 0, width, height);
-        // 绘制图片到canvas
-        this.context.drawImage(img, 0, 0);
-        this.beforeScreenCut(img, this);
-        this.screenCut(this.canvas.toDataURL('image/png'), this);
-        this.beforeDestroy(img, this);
-        const { destroyed } = this;
-        this.destroy();
-        destroyed.call(this, img, this);
-    }
-
     // 销毁组件
     destroy() {
-        delete this.image.onload;
         Object.keys(this).forEach((i) => {
             delete this[i];
         });
     }
 }
-export default function (dom, callback, size) {
+export function screenCut (dom, callback, size) {
     const simpleScreenCut = new SimpleScreenCut();
     simpleScreenCut.screenCut = callback;
+    simpleScreenCut.destroyed = simpleScreenCut.destroy;
     return simpleScreenCut.drawDom(dom, false, size);
 }

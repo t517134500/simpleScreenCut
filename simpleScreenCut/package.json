@@ -2,23 +2,11 @@
   "name": "simple-screen-cut",
   "version": "0.0.2",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-classes": "^7.9.2",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-dynamic-import-node": "^2.3.0",
-    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-    "babel-preset-es2015": "^6.24.1",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "webpack": "^3.6.0"
   },
   "dependencies": {},
   "description": "用于快速生成复杂效果的3d贴图",
+  "main": "simpleScreenCut.min.js",
   "scripts": {
-    "dev": "webpack --config config/config.js",
-    "start": "npm run dev"
   },
   "repository": {
     "type": "git",

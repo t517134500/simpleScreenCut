@@ -2,11 +2,11 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 //读取文件
 module.exports = {
-    entry: './index.js',
+    entry: './simpleScreenCut/index.js',
     
     // 输出
     output: {
-        path: path.resolve(__dirname, "../dist"),
+        path: path.resolve(__dirname, "../simpleScreenCut/dist"),
         filename: 'simpleScreenCut.min.js'
     },
     module: {

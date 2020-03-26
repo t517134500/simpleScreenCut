@@ -1,6 +1,6 @@
 {
   "name": "simple-screen-cut",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.7.0",

@@ -1,13 +1,11 @@
 {
   "name": "simple-screen-cut",
-  "version": "0.0.2",
-  "devDependencies": {
-  },
+  "version": "0.1.1",
+  "devDependencies": {},
   "dependencies": {},
   "description": "用于快速生成复杂效果的3d贴图",
   "main": "simpleScreenCut.min.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/t517134500/simpleScreenCut.git"

@@ -4,7 +4,7 @@
   "devDependencies": {},
   "dependencies": {},
   "description": "用于快速生成复杂效果的3d贴图",
-  "main": "simpleScreenCut.min.js",
+  "main": "dist/simpleScreenCut.min.js",
   "scripts": {},
   "repository": {
     "type": "git",

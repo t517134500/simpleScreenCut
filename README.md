@@ -9,7 +9,8 @@ $npm install simple-screen-cut
 ```
 javascript
 ```javascript
-import 'simple-screen-cut';
+import 'simple-screen-cut'; // 源码
+import 'simpleScreenCut/dist/simpleScreenCut.min';// 打包过后的代码
 ```
 #### 2.直接下载
 下载 `dist`文件夹下的`simpleScreenCut.min.js`;script标签引入
